@@ -37,9 +37,13 @@ input::placeholder {
      top:50%;
      left: 50%;
      transform: translate(-50%, -50%);
-     background-color: rgb(248, 245, 245);
-     padding: 2em;
+     background-color: rgb(255, 255, 255);
      margin: auto;
+     padding: 3em;
+     width: 600px;
+     -webkit-box-shadow: 0px 0px 11px -1px rgba(217, 218, 211, 1);
+     -moz-box-shadow: 0px 0px 11px -1px rgba(217, 218, 211, 1);
+     box-shadow: 0px 0px 11px -1px rgba(217, 218, 211, 1);
 }
 
 h1, h2 {
@@ -58,6 +62,9 @@ h1, h2 {
      justify-content: center;
      gap: 10px;
      padding-top: 10px;
+     width: 100%;
+     inline-size: 100%;
+     word-break: break-all;
 }
 
 .todo{
@@ -81,11 +88,6 @@ h1, h2 {
      padding: 2rem 0rem 2rem 0rem;
 }
 
-
-button {
-     cursor: pointer;
-}
-
 .todo i, p {
      padding: 5px;
      cursor: pointer;
@@ -96,6 +98,10 @@ button {
 .bi {
      font-size: 1rem;
      margin: 0.25rem;
+}
+
+.bi:hover {
+     cursor: pointer;
 }
 
 .checked {
@@ -109,4 +115,24 @@ button {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+
+
+
+@media (max-width: 620px) {
+     .container {
+          width: 500px;
+     }
+}
+
+@media (max-width: 520px) {
+     .container {
+          width: 400px;
+     }
+}
+
+@media (max-width: 420px) {
+     .container {
+          width: 350px;
+     }
 }
