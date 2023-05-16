@@ -9,33 +9,34 @@
 </head>
 <body>
      <div class="container">
-
-          <h1>Hello there!👋</h1>
-
           <header>
                <div class="header">
+                    <h1>Hello there!👋</h1>
                     <h2>What are you planning today? 👀</h2>
                </div>
-               
-               <div class="new-todo">
-                    <form id="todo-form">
-                         <input type="text" id="new-todo-id" name="new-todo-name" placeholder="I will do...">
-                         <button type="submit">
-                              <i class="bi bi-plus-circle"></i>
-                         </button>
-                    </form>
-               </div>
+                    <div class="new-todo">
+                         <form id="todo-form">
+                              <div class="form">
+                                   <input type="text" id="new-todo-id" name="new-todo-name" placeholder="I will do...">
+                              </div>
+
+                              <div class="button">
+                                   <button type="submit">
+                                        <i class="bi bi-plus-circle"></i>
+                                   </button>
+                              </div>  
+                         </form>
+                    </div>
           </header>
 
-          <div id="todo-list">
-               <div class="todo" id="0">
-                    <i class="bi bi-circle"></i>
-                    <i class="bi bi-check-circle"></i>
-                    <p class="checked">Some todo text.</p>
-                    <i class="bi bi-pen"></i>
-                    <i class="bi bi-x-lg"></i>
-               </div>
-          </div>
+          <main id="bottom">
+               <div id="todo-list"></div>
+          </main>
+     </div>
+          
+
+          
+          
      </div>
 
      <script src="script.js"></script>
